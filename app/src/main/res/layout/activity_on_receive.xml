@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kpssdunyasi.hamdiburakdilek.solrexample.OnReceive">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/uniadil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Üniversite Adı :"
+            android:textColor="#FF0000"
+            android:padding="3dp"
+            android:layout_below="@+id/padill" />
+
+        <TextView
+            android:id="@+id/uni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uniadil"
+            android:padding="3dp"
+            android:text="Universite Adı" />
+        <TextView
+            android:id="@+id/kategorl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proje Kategorisi :"
+            android:textColor="#FF0000"
+            android:padding="3dp"
+            android:layout_below="@+id/uni" />
+
+        <TextView
+            android:id="@+id/kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:padding="3dp"
+            android:layout_below="@+id/kategorl" />
+        <TextView
+            android:id="@+id/amacil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proje Amacı :"
+            android:textColor="#FF0000"
+            android:padding="3dp"
+            android:layout_below="@+id/kategori" />
+
+        <TextView
+            android:id="@+id/pamaci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proje Amacı"
+            android:padding="3dp"
+            android:layout_below="@+id/amacil" />
+        <TextView
+            android:id="@+id/ozettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proje Özeti :"
+            android:textColor="#FF0000"
+            android:padding="3dp"
+            android:layout_below="@+id/pamaci" />
+
+        <TextView
+            android:id="@+id/pozeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ozettext"
+            android:padding="3dp"
+            android:text="Proje Özeti" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
